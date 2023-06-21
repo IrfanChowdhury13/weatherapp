@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section id="weather-app">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <h1 id="cityname" class="cityname text-center p-5 pt-5">Dhaka</h1>
+                    </div>
+                </div>
+                <div class="row app-body d-flex">
+                    <div class="col-12 col-md-12 d-flex">
+                        <div class="weatherForcast">
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                    </div>
+                        <h2 class="temperature">28</h2> 
+                        <span>°C</span>
+                        <ul>
+                            <li class="fs-6 humidity">Humidity: 82%</li>
+                            <li class="fs-6 wind">Wind: 13 km/h</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row weather-app-btn pb-5">
+                    <form action="" class="d-flex gap-5">
+                        <input id="location" class="location form-control form-control-lg" type="text" placeholder="" aria-label=".form-control-lg example">
+                        
+                        <button onclick="getWeatherData()" id="getWeatherBtn" class="btn bg-dark text-white" type="button">
+                            Search
+                        </button>
+                    </form>
+                </div>
+                    
+            </div>
+        </section>
+    </main>
+
+
+
+
+    
+    
+    
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
